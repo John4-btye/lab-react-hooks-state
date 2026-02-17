@@ -13,11 +13,13 @@ Your task is to implement these features using **React Hooks (`useState`)** whil
 ---
 
 ## **Challenge**
+
 1. Implement a **dark mode toggle**.
 2. Allow users to **add items** from a shopping cart.
 3. Implement **category-based filtering** for the shopping list.
 
 ## **Bonus Challenge**
+
 4. Display a **cart total** showing the number of items added.
 
 ---
@@ -25,6 +27,7 @@ Your task is to implement these features using **React Hooks (`useState`)** whil
 ## **Instructions**
 
 ### **1️⃣ Fork and Clone the Repository**
+
 1. **Fork** the provided GitHub repository.
 2. **Clone** the forked repository to your local machine:
    ```sh
@@ -42,17 +45,20 @@ Your task is to implement these features using **React Hooks (`useState`)** whil
    ```
 
 ### **2️⃣ Implement the Dark Mode Toggle**
+
 - Implement a **button** that toggles between light and dark mode.
 - The text of the toggle button should change dynamically.
-   - Feel free to also play with styling! However, you'll only be tested on the text of the dark mode toggle button.
+  - Feel free to also play with styling! However, you'll only be tested on the text of the dark mode toggle button.
 - Use the **useState hook** to manage the current theme.
 
 ### **3️⃣ Implement the Add to Cart Feature**
+
 - Each product should have an **"Add to Cart"** button.
 - Clicking the button should add the item to the cart.
 - The cart should display a **list of added items** with the text 'Item is in your cart' such as 'Milk is in your cart.'
 
 ### **4️⃣ Implement the Category Filter**
+
 - Create a **dropdown menu** to filter products by category.
 - When a user selects a category, **only matching products** should be displayed.
 - Use **state management (`useState`)** to track the selected category.
@@ -60,12 +66,14 @@ Your task is to implement these features using **React Hooks (`useState`)** whil
 ---
 
 ## **Bonus Challenge: Cart Total**
+
 - Display a **cart total** showing how many items have been added.
 - The total should update dynamically when items are added.
 
 ---
 
 ## **Testing and Debugging**
+
 1. Run the test suite:
    ```sh
    npm test
@@ -78,6 +86,7 @@ Your task is to implement these features using **React Hooks (`useState`)** whil
 ---
 
 ## **Version Control**
+
 1. Initialize a Git repository:
    ```sh
    git init
@@ -95,11 +104,21 @@ Your task is to implement these features using **React Hooks (`useState`)** whil
 ---
 
 ### **✅ Submission**
+
 - Submit your project as a **GitHub repository** to CodeGrade.
 
 ---
 
+### \*\* Review
+
+- This dynamic shopping app has the following features:
+- Dark Mode Functionality
+- Product Category Filtering Functionality
+- Add to Cart Functionality
+- Also disables the add to cart button if a product is changed to out of stock
+
 ## **Resources**
+
 - [React Docs: useState](https://react.dev/reference/react/useState)
 - [Material UI Documentation](https://mui.com)
 - [CSS Modules Documentation](https://github.com/css-modules/css-modules)

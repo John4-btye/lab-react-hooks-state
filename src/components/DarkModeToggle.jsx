@@ -1,6 +1,7 @@
 import React from "react";
 
 function DarkModeToggle({ darkMode, setDarkMode }) {
+
   {/* Function to toggle between light modes */}
   const toggleMode = () => {
     setDarkMode(!darkMode);

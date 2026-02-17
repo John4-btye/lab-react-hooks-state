@@ -8,6 +8,7 @@ export const sampleProducts = [
 ];
 
 function ProductList({ addToCart, category }) {
+
   const filteredProducts =
     category === "All"
       ? sampleProducts
@@ -15,19 +16,27 @@ function ProductList({ addToCart, category }) {
 
   return (
     <div>
+
       <h2>Available Products</h2>
 
       {filteredProducts.length === 0 ? (
+
         <p>No products available</p>
+
       ) : (
+
         filteredProducts.map((product) => (
+
           <ProductCard
             key={product.id}
             product={product}
             addToCart={addToCart}
           />
+
         ))
+
       )}
+
     </div>
   );
 }
