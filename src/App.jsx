@@ -14,8 +14,13 @@ function App() {
   const [category, setCategory] = useState('All');
 
   // TODO: Implement addToCart 
-  const addToCart = (productName) => {
-    setCart([...cart, productName]);
+  const addToCart = (product) => {
+    setCart([...cart, product]);
+  };
+
+  // TODO: Implement remove from cart feature
+  const removeFromCart = (productId) => {
+    setCart(cart.filter((item) => item.id !== productId));
   };
 
   // TODO: Implement state for category filtering
@@ -25,7 +30,7 @@ function App() {
 
   return (
     <div className={darkMode ? "dark" : "light"}>
-      <h1>Grocery App</h1>
+      <h1>Shopping App</h1>
 
       {/* TODO: Render DarkModeToggle and implement dark mode functionality */}
       <DarkModeToggle
@@ -39,6 +44,7 @@ function App() {
         <option value="Dairy">Dairy</option>
         <option value="Fruits">Fruits</option>
         <option value="Bakery">Bakery</option>
+        <option value="Veggies">Veggies</option>
       </select>
 
       <ProductList 
@@ -46,7 +52,11 @@ function App() {
         category={category}
       />
 
-      <Cart cart={cart} />
+      <Cart 
+        cart={cart}
+        removeFromCart={removeFromCart}
+       
+      />
     </div>
   );
 }
